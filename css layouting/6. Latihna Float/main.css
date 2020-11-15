@@ -1,0 +1,312 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: darkgrey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    background-color: whitesmoke;
+    border: 1px solid white;
+}
+
+.container-hitam {
+    width: 85%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.822);
+    border: 1px solid rgba(0, 0, 0, 0.822);
+}
+
+.header {
+    padding: 10px;
+}
+
+.header-htm {
+    padding: 10px;
+    color: cornsilk;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.header-htm h1 {
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+
+.header li {
+    width: 100px;
+    margin: 5px;
+    padding: 2px;
+    border: 1px solid;
+    border-radius: 40px;
+    text-align: center;
+    display: inline-block;
+}
+
+.header-htm li {
+    width: 100px;
+    margin: 5px;
+    padding: 2px;
+    border: 1px solid;
+    border-radius: 40px;
+    text-align: center;
+    display: inline-block;
+    background-color: gray;
+}
+
+.header a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.header-htm a {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.gambar {
+    max-width: 100%;
+    margin: auto;
+    height: 300px;
+    border: 2px solid lightslategrey;
+    box-shadow: 1px 2px 13px;
+}
+
+.gambar img {
+    width: 100%;
+    height: 300px;
+}
+
+.artikel {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.artikel-htm {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: grey;
+}
+
+.artikel h2 {
+    margin-left: 5px;
+    font-size: 25px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.artikel-htm h2 {
+    margin-left: 5px;
+    font-size: 25px;
+    font-style: italic;
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+.artikel #lbl {
+    margin-left: 11px;
+    font-size: 10px;
+    color: brown;
+    font-style: oblique;
+}
+
+.artikel-htm #lbl {
+    margin-left: 11px;
+    font-size: 10px;
+    color: brown;
+    font-style: oblique;
+}
+
+.rata-kiri {
+    margin: 11px 4px 4px 11px;
+    width: 45%;
+    float: left;
+}
+
+.rata-kanan {
+    margin: 11px 4px 4px 11px;
+    width: 45%;
+    float: left;
+}
+
+.rata-kiri p {
+    font-size: 13px;
+    font-style: oblique;
+    padding: 6px;
+}
+
+.rata-kanan img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.rata-kanan p {
+    font-size: 13px;
+    padding: 6px;
+    font-style: oblique;
+}
+
+.clear {
+    clear: left;
+}
+
+.footer {
+    background-color: black;
+    height: 50px;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: unset;
+    line-height: 50px;
+}

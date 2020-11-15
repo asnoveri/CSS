@@ -1,0 +1,113 @@
+.flex-direction-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    background-color: gainsboro;
+}
+
+.flex-direction-column>div {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin: 5px;
+    background-color: lightcoral;
+}
+
+.flex-direction-row {
+    width: 35%;
+    background-color: lightgrey;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-direction-row>div {
+    width: 100px;
+    height: 100px;
+    padding: 4px;
+    margin: 4px;
+    background-color: lightpink;
+}
+
+.flex-direction-column-reverse {
+    width: 50%;
+    background-color: lightgrey;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.flex-direction-column-reverse>div {
+    width: 100px;
+    height: 100px;
+    padding: 4px;
+    margin: 4px;
+    background-color: lightseagreen;
+}
+
+.flex-direction-row-reverse {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: lightslategray;
+}
+
+.flex-direction-row-reverse>div {
+    width: 100px;
+    height: 100px;
+    padding: 4px;
+    margin: 4px;
+    background-color: limegreen;
+}
+
+.flex-wrap-wrap {
+    width: 40%;
+    margin: auto;
+    background-color: lightslategrey;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-wrap-wrap>div {
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+    padding: 4px;
+    background-color: mediumorchid;
+}
+
+.flex-wrap-nowrap {
+    width: 50%;
+    margin: auto;
+    background-color: lightslategray;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-wrap-nowrap>div {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    background-color: midnightblue;
+}
+
+.flex-flow {
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.flex-flow>div {
+    width: 100px;
+    height: 100px;
+    background-color: maroon;
+    padding: 5px;
+    margin: 5px;
+}

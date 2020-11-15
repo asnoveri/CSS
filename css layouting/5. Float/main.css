@@ -1,0 +1,48 @@
+/* 
+    float->
+    right
+    none
+    left
+*/
+
+.container {
+    width: 50%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.kiri {
+    width: 25%;
+    height: 200px;
+    background-color: blue;
+    float: left;
+}
+
+.tengah {
+    width: 50%;
+    height: 200px;
+    background-color: brown;
+    float: left;
+}
+
+.kanan {
+    width: 25%;
+    height: 200px;
+    background-color: cornflowerblue;
+    float: left;
+}
+
+.clear {
+    clear: left;
+}
+
+/* cara menghentikan floar/clear
+    clear berfungsi menghentikan / membersihkan float
+    left-> bersihkan float kiri
+    right-> bersihkan float kanan
+    both-> bersihkan kedua float
+
+    cara mengunkannya kita menambhkan div kosong di akhir float
+*/

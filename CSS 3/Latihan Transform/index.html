@@ -1,0 +1,312 @@
+<html>
+
+<head>
+    <title>Latihan TransFrom</title>
+</head>
+<style>
+    .container {
+        width: 80%;
+        margin: auto;
+        border: 2px solid black;
+
+    }
+
+    .kotak1 {
+        width: 200px;
+        height: 100px;
+        margin: 5px auto;
+        background-color: aqua;
+        transition: 1s;
+        text-align: center;
+        line-height: 100px;
+    }
+
+    .kotak1:hover {
+        transform: scale(2);
+    }
+
+    .kotak2 {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: brown;
+        text-align: center;
+        line-height: 200px;
+        transition: 1s;
+    }
+
+    .kotak2:hover {
+        transform: scaleX(2);
+    }
+
+    .kotak3 {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: burlywood;
+        text-align: center;
+        line-height: 200px;
+        transition: 1s;
+    }
+
+    .kotak3:hover {
+        transform: scaleY(2);
+    }
+
+    .kotak-rotate1 {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: chartreuse;
+        text-align: center;
+        line-height: 200px;
+        transition: 2s;
+    }
+
+    .kotak-rotate1:hover {
+        transform: rotate(60deg);
+    }
+
+    .kotak-rotate2 {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: purple;
+        text-align: center;
+        line-height: 200px;
+        transition: 2s;
+    }
+
+    .kotak-rotate2:hover {
+        transform: rotateX(90deg);
+    }
+
+    .kotak-rotate3 {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: red;
+        text-align: center;
+        line-height: 200px;
+        transition: 2s;
+    }
+
+    .kotak-rotate3:hover {
+        transform: rotateY(90deg);
+    }
+
+    .kotak-rotate4 {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: deeppink;
+        text-align: center;
+        line-height: 200px;
+        transition: 1s;
+    }
+
+    .kotak-rotate4:hover {
+        transform: rotate(45deg) rotateX(65deg) rotateY(30deg);
+    }
+
+    .kotak-skew {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: rosybrown;
+        text-align: center;
+        line-height: 200px;
+        transition: 2s;
+    }
+
+    .kotak-skew:hover {
+        transform: skew(45deg);
+    }
+
+    .kotak1-skew {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: slateblue;
+        text-align: center;
+        line-height: 200px;
+        transition: 2s;
+    }
+
+    .kotak1-skew:hover {
+        transform: skewX(45deg);
+    }
+
+    .kotak2-skew {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: tomato;
+        text-align: center;
+        line-height: 200px;
+        transition: 2s;
+    }
+
+    .kotak2-skew:hover {
+        transform: skewY(45deg);
+    }
+
+    .kotak3-skew {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: gold;
+        text-align: center;
+        line-height: 200px;
+        transition: 1s;
+    }
+
+    .kotak3-skew:hover {
+        transform: skew(34deg) skewX(46deg) skewY(40deg);
+    }
+
+    .kotak-translet {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: teal;
+        text-align: center;
+        line-height: 200px;
+        transition: 2s;
+    }
+
+    .kotak-translet:hover {
+        transform: translate(100px);
+    }
+
+    .kotak1-translet {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: crimson;
+        text-align: center;
+        line-height: 200px;
+        transition: 2s;
+    }
+
+    .kotak1-translet:hover {
+        transform: translateX(100px);
+    }
+
+
+    .kotak2-translet {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: darkgrey;
+        text-align: center;
+        line-height: 200px;
+        transition: 2s;
+    }
+
+    .kotak2-translet:hover {
+        transform: translateY(100px);
+    }
+
+
+    .kotak4 {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: darkslategray;
+        text-align: center;
+        line-height: 200px;
+        transition: 1s;
+    }
+
+    .kotak4:hover {
+        transform: scale(2, 3);
+    }
+
+    .kotak3-translet {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: maroon;
+        text-align: center;
+        transition: 2s;
+    }
+
+    .kotak3-translet:hover {
+        transform: translate(64px) translateX(50px) translateY(50px);
+    }
+
+    .trans-banyk {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: midnightblue;
+        transition: 2s;
+    }
+
+    .bungkus {
+        width: 50%;
+        height: 500px;
+        margin: 5px auto;
+        border: 2px solid black;
+    }
+
+    .bungkus:hover .trans-banyk {
+        transform: rotate(360deg) skew(1deg) translateX(140px) scale(2);
+        border-radius: 50%;
+        background-color: lawngreen;
+        width: 50px;
+        height: 50px;
+    }
+
+    .putar {
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;
+        background-color: bisque;
+        transition: 1s;
+    }
+
+    .putar:hover {
+        transform: rotateZ(180deg);
+        background-color: black;
+    }
+</style>
+
+<body>
+    <div class="putar"></div>
+    <div class="container">
+        <p>Trasnform 2 Dimensi</p>
+        <hr>
+        <p>Transform scale</p>
+        <div class="kotak1">Transform dengan scale</div>
+        <div class="kotak2">Transform dengan scaleX </div>
+        <div class="kotak3">Transform dengan scaleY </div>
+        <div class="kotak4">Transform scale Ditumpuk </div>
+        <hr>
+        <p>transform rotate</p>
+        <div class="kotak-rotate1">Trasnform dengan rotate</div>
+        <div class="kotak-rotate2">Trasnform dengan rotateX</div>
+        <div class="kotak-rotate3">Trasnform dengan rotateY</div>
+        <div class="kotak-rotate4">Trasnform rotate tumpukan</div>
+        <hr>
+        <p>transform skew</p>
+        <div class="kotak-skew">Transfrom Skew</div>
+        <div class="kotak1-skew">Transfrom SkewX</div>
+        <div class="kotak2-skew">Transfrom SkewY</div>
+        <div class="kotak3-skew">Transfrom Skew Tumpukan</div>
+        <hr>
+        <p>transform translet</p>
+        <div class="kotak-translet">Transform translet</div>
+        <div class="kotak1-translet">Transform transletX</div>
+        <div class="kotak2-translet">Transform transletY</div>
+        <div class="kotak3-translet">Transform translet TumpukanY</div>
+        <hr>
+        <p>TEST BANYAK</p>
+        <div class="bungkus">
+            <div class="trans-banyk"></div>
+        </div>
+    </div>
+</body>
+
+</html>

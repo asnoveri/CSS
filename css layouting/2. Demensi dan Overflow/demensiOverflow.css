@@ -1,0 +1,27 @@
+/* 
+1. demensi
+px-> satuan absolute(pasti)
+%-> relatif  terhadap parent
+
+*/
+
+.satu {
+    width: 200px;
+    height: 100px;
+    background-color: rebeccapurple;
+    overflow: auto;
+}
+
+.dua {
+    width: 100%;
+}
+
+/* 2. overflow->
+    digunakan untuk menagtur elemen yang keluar dari elemen 
+    
+    4 macam valeu overflow 
+        - visible -> value defaule sebuah element
+        - auto -> css secara otomatis ankan menambhkan scrool ketika  contentnya keluar dari eleme parent
+        - hdden -> content yang keluar dari element paarent aka di hilangkan
+        -scrool -> mirip denga auto, tetapi scroll tetap
+    */

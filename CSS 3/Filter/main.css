@@ -1,0 +1,21 @@
+/* filter
+    ->properti filter:
+        blur(px)
+        brightness(angka | %)
+        contrast(angka | %)
+        saturate(angka | %)
+        grayscale(angka | %)
+        sepia(angka | %)
+        hue-rotate(deg)
+        invert(angka | %)
+        opacity(angka | %)
+        drop-shadow(sama dengan box shadow)
+        
+*/
+
+img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    filter: grayscale(30%) drop-shadow(5px 5px 5px black)
+}

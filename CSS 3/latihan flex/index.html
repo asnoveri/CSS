@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Latihan Flex</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+
+<body>
+    <h3>flex-direction: column</h3>
+    <div class="flex-direction-column">
+        <div style="align-self: flex-end">1</div>
+        <div>2</div>
+    </div>
+
+    <h3>flex-direction: row</h3>
+    <div class="flex-direction-row">
+        <div>1</div>
+        <div style="flex-shrink:0">2</div>
+        <div>3</div>
+    </div>
+
+    <h3>flex-direction: column-reverse</h3>
+    <div class="flex-direction-column-reverse">
+        <div style="flex-basis: 150px">1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h3>flex-direction: row-reverse</h3>
+    <div class="flex-direction-row-reverse">
+        <div style="flex-grow:1">1</div>
+        <div style="flex-grow:2">3</div>
+        <div style="flex-grow:10">6</div>
+    </div>
+
+    <h3>flex-wrap: wrap</h3>
+    <div class="flex-wrap-wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+    <h3>flex-wrap: nowrap</h3>
+    <div class="flex-wrap-nowrap">
+        <div style="order:5">1</div>
+        <div style="order:1">2</div>
+        <div style="order:3">3</div>
+        <div style="order:2">4</div>
+    </div>
+
+    <h3>flex-flow</h3>
+    <div class="flex-flow">
+        <div>1</div>
+        <div>2</div>
+
+    </div>
+</body>
+
+</html>

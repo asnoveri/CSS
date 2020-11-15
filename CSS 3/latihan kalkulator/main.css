@@ -1,0 +1,69 @@
+.container {
+    width: 30%;
+    height: 500px;
+    margin: 50px auto;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 4px;
+}
+
+.hasil {
+    width: 80%;
+    margin: 5px auto;
+    height: 180px;
+    background-color: rgb(95, 156, 197);
+    box-shadow: 1px 1px 8px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.hasil>.result {
+    padding-right: 15px;
+    text-align: right;
+    font-size: 25px;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+.hasil>.idk {
+    padding-right: 15px;
+    text-align: right;
+    font-size: 15px;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+.tombol {
+    width: 80%;
+    margin: 5px auto;
+    height: 100%;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 4px;
+}
+
+.tombol>div {
+    width: 60px;
+    height: 50px;
+    background-color: rgb(211, 214, 218);
+    margin: 3px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    box-shadow: 1px 1px 8px black;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.tombol>div:hover {
+    background-color: rgb(91, 103, 119);
+    color: whitesmoke;
+}

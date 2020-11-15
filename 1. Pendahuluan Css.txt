@@ -1,0 +1,2 @@
+css-> singkat cascading style sheet
+Devenisi css-> sebuah cara untuk mengeloal gaya/styel pada sebuah web

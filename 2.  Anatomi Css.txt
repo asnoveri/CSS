@@ -1,0 +1,5 @@
+anatomi css:
+selector {property : value;}
+    ex: h1{color:red;}
+
+//selector -> suatu cara untuk memilih elemen yang akan di berikan suatu gaya/ style

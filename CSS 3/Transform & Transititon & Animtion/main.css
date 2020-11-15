@@ -1,0 +1,92 @@
+/* transform ->digunakan untuk memanipulasi format visual dari elem html
+    synatknya:
+    trasnform: <fungsi>
+    funsi-fungsi transform
+     - transform 2d
+        - scale -> memperbesar / memperkecil
+        ex:
+            scale(angak) meperbesar elemen
+            scalex(angka) ->meperbesa secara horizontal
+            scaley(angka) ->memperbesar secara vertikal
+        - rotate ->memutar
+            rotate(deg) memuta elemen berdasarkan sumbu tengah
+            rotatex(deg) ->memutar secara horizontal 
+            rottatey(deg) ->memutar secara vertikal
+        - skew  -> membuat condong /miring
+            skew(deg) memiringkan elemen
+            skewx(deg) ->memiringkan elemen secara horizontal
+            skewy(deg) ->memiringkan secara vertikal
+        - translet -> mengubah posisi
+            translet(px) mengubah posisi elemn
+            transletx(px) ->mengubah posisi secara horizontal
+            translety(px) ->mengubha posisi secara vertikal
+        note*:  x ->horozontal->garis lurus mendatar
+                y ->vertikal-> garis tegak lurus
+    - transform 3d
+
+ */
+
+.kotak {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-color: aqua;
+    transition: 1s;
+    text-align: center;
+    line-height: 200px;
+}
+
+.kotak:hover {
+    /* transform: scale(2); */
+    /* transform: rotate(-120deg);
+    /* transform: rotateX(150deg); */
+    /* transform: skewX(45deg); */
+    border-radius: 50%;
+    transform: translate(64px, 300px) rotate(360deg);
+}
+
+/* transition -> tekini merubah properti html secara halus ,yang dismpan pada ke ada awal
+    apa beda transition dan animation
+        -trasnsis -> memilik pergerakan denga dua ke adaan (keadaa, awal)
+        -animasi -> memiliki pergerakan dengan banyak keadaan (keadaan awal, keadaan akhir , keyframe(kedaan di antara kedaan awal dan akhir))
+
+    tansition:
+        - durasi    -> wajib ada
+            ex: transition: 2s -> bisa gunkan s->second(detik), ms->mili second
+        - porperty -> digunakan keadanawal y di ubah
+            ex: trantision: margin-left 1s; -> artinya merubah tampilan margin-left secara halus dan yang lain secar instan   
+        - fungsi    -> optional
+        - delay     -> optionla
+
+
+
+*/
+
+
+
+.con {
+    width: 80%;
+    height: 100px;
+    margin: 15px auto;
+    border: 3px solid black;
+}
+
+.kotak2 {
+    width: 100px;
+    height: 100px;
+    background-color: maroon;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 13%;
+    transition: margin-left 1s;
+}
+
+
+.con:hover .kotak2 {
+    transform: rotate(180deg);
+    margin-left: 90%;
+    border-radius: 50%;
+    background-color: blue;
+
+
+}

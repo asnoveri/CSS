@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex BOX</title>
+</head>
+<style>
+    /* -flex -> menungkinkan kita untuk membuat website reponsive dengan mudah
+        cara mengunakan flex ->  menambhkan display: flex; pada parent dari elemen yang ingin mengunkana flex.
+
+        -flex container 
+            property flex container
+            1.flex-direction -> digunakan untuk menentukan kearaha mana item-item dari parent element ingin diarahkan tumpukannya
+                - flex-direction: column;           -> menumpukan item2 dari parent element secara vertikal dari atas kebawah
+                - flex-direction: column-reverse;   -> menumpukan item2 dari parent element secara vertikal dari bawah keatas
+                - flex-direction: row;              -> menumpukan item2 dari parent element secara harizontal dari kiri ke kana
+                - flex-direction: row-reverse;      -> menumpukan item2 dari parent element secara harizontal dari kana ke kiri
+            2. flex-wrap    -> digunakan untuk menentukan item2 dari parent element apakah di bungkus atau tidak
+                - flex-wrap: wrap;          -> digunkan untuk item2 agar enter kebawah jika jumlahnya melebihi ukuran leberan elemen parent
+                - flex-wrap: nowrap;        -> digunkan untuk item2 agar tidak enter kebawah jika jumlahnya melebihi ukuran leberan elemen parent
+                - flex-wrap: wrap-reverse;  -> digunkan untuk item2 agar enter kebawah jika jumlahnya melebihi ukuran leberan elemen parent dengan urutan terbalik
+            3. flex-flow   -> digunakan untuk penulisan singkat dari flex-direction dan flex wrap
+            4. justify-content -> digunakan u menempatkan item2 secara horizontal
+                - justify-content: center;          -> digunakan untuk menenpatkan item2 dari parent elemnt di tengah      
+                - justify-content: flex-start;      -> nilai defaul justify-content  di kiri atau awal item     
+                - justify-content: flex-end;        -> digunakan untuk menenpatkan item2 dari parent elemnt di kanana atau akhir dari item     
+                - justify-content: space-around;    -> digunaka untuk memberi spasi dari masing item baik sebelum atau sesudah atau juga diantar  item2 tersebut
+                - justify-content: space-between;   -> digunaka untuk memberi spasi dari masing item  diantar masing item2 tersebut
+            5. align-items  ->digunakan u menempatkan item2 secara vertikal
+                - align-items: center;          -> menemptakn posisi item2 dari parent element  di tengan scra vertikal
+                - align-item: flex-start;       -> menempatkan item2 di atas atau awal item   secara vertikal 
+                - align-item: flex-end;         -> digunakan untuk menenpatkan item2 dari parent elemnt di bawah atau akhir dari item2 secara vertikal
+                - align-items: stretch;         -> menyesuikan ukuran item2 sesuai ukuran elemen parentnya
+                - align-items: baseline;        -> menyesuaikan item flex sesuai dengan item pembungkusnya, seperti (h1,h2,h3, samll)
+            6. align-content    -> digunakan untuk meratakan garis fleksibel seluruh item, tapi ditambahkan flex-wrap:wrap untuk mengunakan align-content.
+                - align-content: space-between; -> digunakan untk membrikan jarak antar garis1 dan garis2 dari tumpukan item
+                - align-content: space-around;  -> digunakan untk membrikan jarak sebelum dan sesudah antar garis1 dan garis2 dari tumpukan item
+                - align-content: stretch;       -> menyesuikan ukuran item2 sesuai ukuran elemen parentnya
+                - align-content: center;        -> menemptakn posisi item2 dari parent element  di tengan scra vertikal
+                - align-content: flex-strat;    -> menempatkan item2 di atas atau awal item   secara vertikal 
+                - align-content: flex-end;      -> digunakan untuk menenpatkan item2 dari parent elemnt di bawah atau akhir dari item2 secara vertikal
+            7. Flex Items       -> digunakan untuk menetukan style masing2 item dari anak-anak parent flex    
+                - order -> digunakan untuk menentukan urutan item2, dari nilai terkecil sampai terbesar yang ditampilakan
+                    ex: <div style="order:1">3</div>
+                        <div style="order:2">2</div>
+                        <div style="order:3">1</div>
+                - flex-grow -> digunakan untuk menentukan ukuran item2,  dari nilai terkecil menampilkan ukuran kecil dan nilai terbesar menampilakn ukuran besar        
+                    ex: <div style="flex-grow:1">3</div>
+                        <div style="flex-grow:2">2</div>
+                        <div style="flex-grow:3">1</div>
+                - flex-shrink -> digunakan u menentukan seberapa banyak item2 flex akan menyusut ketika salah satu item yang memiliki property flex-shrink, dan nilai defaultnya adalah 1
+                     ex:<div >3</div>
+                        <div style="flex-shrink:0">2</div>
+                        <div >1</div>
+                - flex-basisi -> Properti flex-basis menentukan panjang awal item flex.
+                    ex: <div style="flex-basis: 200px">3</div>
+                - Properti flex-> syntax simple untuk flex item
+                    ex: <div style="flex: 0 0 200px">1</div>
+                    susunannya: flex: flex grow flex-shrink flex-basis
+            8. align-self    -> digunakan untuk menentukan properti align-self dari item2 yang memiliki property align-slef
+                - align-self:center; -> item yang memilik property ini akan berada di tengah container/bengkus, dan ukurannya tidak mengkuti ukuran parentnya
+                    ex: <div>1</div>
+                        <div>2</div>
+                        <div style="align-self: center">3</div>
+                        <div>4</div>    
+                -align-self: flex-start -> -> item yang memilik property ini akan berada di bagian paling atas container/bengkus, dan ukurannya tidak mengkuti ukuran parentnya
+                -align-self: flex-end -> -> item yang memilik property ini akan berada di bagian paling bawah container/bengkus, dan ukurannya tidak mengkuti ukuran parentnya
+                
+
+    
+
+    */
+
+    .flex {
+        display: flex;
+        background-color: aqua;
+        width: 50%;
+        height: 200px;
+        margin: auto;
+    }
+
+    .flex>div {
+        width: 100px;
+        background-color: beige;
+        text-align: center;
+        line-height: 100px;
+        padding: 5px;
+        margin: 5px;
+    }
+</style>
+
+<body>
+    <div class="flex">
+        <div>1</div>
+        <div style="align-self: flex-start">2</div>
+        <div style="align-self: center">3</div>
+        <div style="align-self: flex-end"> 4</div>
+        <div>4</div>
+
+
+
+    </div>
+</body>
+
+</html>

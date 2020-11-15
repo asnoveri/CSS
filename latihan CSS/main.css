@@ -1,0 +1,370 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.container {
+    width: 100%;
+    background-color: rgba(241, 239, 229, 0.575);
+
+}
+
+.nav-bar {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav-bar>p {
+    float: left;
+    padding: 5px;
+    font-size: 50px;
+    color: rgb(102, 112, 46);
+}
+
+.nav-bar ul {
+    float: right;
+    margin: 0 30px
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin: 15px;
+    padding: 5px;
+}
+
+.nav-bar a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(72, 73, 32);
+    font-weight: bolder;
+}
+
+.nav-bar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.nav-bar a:hover {
+    color: rgb(102, 112, 46);
+
+}
+
+.menu {
+    visibility: hidden;
+}
+
+
+
+.profil {
+    width: 80%;
+    margin: 50px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px rgb(72, 73, 32);
+    ;
+    border-radius: 2%;
+}
+
+.pkiri {
+    margin-top: 60px;
+    width: 50%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+
+.pkiri h1 {
+    font-size: 40px;
+    color: rgb(72, 73, 32);
+}
+
+.pkiri p {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.pkiri .btn {
+    padding: 6px 15px;
+    border-radius: 6%;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(72, 73, 32);
+    text-align: center;
+    color: white;
+    position: relative;
+    transform: translate(50%);
+}
+
+.btn:hover {
+    background-color: rgb(102, 112, 46);
+
+}
+
+.pkanan {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    perspective: 700px;
+}
+
+.pkanan img {
+    width: 80%;
+    border-radius: 10%;
+    filter: grayscale(50%);
+    transition: 1s ease-in-out;
+}
+
+.pkanan img:hover {
+    transform: rotateY(180deg);
+}
+
+.profil::after {
+    content: "";
+    clear: both;
+    display: table
+}
+
+
+
+.ttg {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.ttg-judul {
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 4px 4px 4px;
+    color: rgb(72, 73, 32);
+    font-weight: bolder;
+    margin: 10px;
+
+}
+
+.ttg-isi {
+    color: rgb(72, 73, 32);
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(72, 73, 32);
+    text-align: center;
+    color: ghostwhite;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        width: 100%;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .nav-bar>p {
+        padding: 5px;
+        font-size: 50px;
+        color: rgb(102, 112, 46);
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    .nav-bar ul {
+        top: 0;
+        width: 100%;
+        margin: auto;
+        display: none;
+        box-sizing: border-box;
+        position: absolute;
+    }
+
+    .nav-bar li {
+        display: block;
+        margin: 15px;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        border-bottom: 2px solid;
+        color: rgb(72, 73, 32);
+        font-weight: bolder;
+        font-size: 25px;
+    }
+
+    .menu {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        text-overflow: clip;
+        font-size: 50px;
+        visibility: visible;
+    }
+
+    .profil {
+        width: 100%;
+        /* margin: 220px auto; */
+    }
+
+    .pkiri,
+    .pkanan {
+        width: 100%;
+    }
+
+    .pkanan img {
+        width: 100%;
+        border-radius: 10%;
+        filter: grayscale(50%);
+        transition: 1s ease-in-out;
+    }
+
+    .ttg {
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+}

@@ -1,0 +1,130 @@
+/* Position*/
+
+.container {
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    border: 5px solid black;
+    position: relative;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+/* Static
+    ->  - posisi default dari tiap elemen    
+        - posisi selain static akan membuat sebuah elemen seolah-olah berbeda deminsi dari elemn lainnya
+        - posisi selain static dapat mengunkan properti top, left, bottom dan right untuk mengtur posisi
+*/
+.satu {
+    background-color: yellow;
+}
+
+.dua {
+    background-color: rebeccapurple;
+}
+
+.tiga {
+    background-color: pink;
+}
+
+/* relativ (tidak mutlak)
+    ->  -posisi relatif dapat mengunkan properti top, left, bottom dan right untuk mengtur posisi
+        - jika kita merubah porperti seprti(top,left,right, bottom) dari sebuah elemen yang memeiliki posisi relatif, maka elemen di sekitarnya tidak akan berpengaruh, 
+        -dan ruang yang di tempati oleh elemen sebelum di beri posisi relitv masih ada 
+        -dan juga realtiv terhadap posisi awal
+*/
+.relatif-satu {
+    background-color: blue;
+
+}
+
+.relatif-dua {
+    background-color: orange;
+    position: relative;
+    top: 0;
+    left: 30px;
+
+}
+
+.relatif-tiga {
+    background-color: black;
+
+}
+
+/* absolute(tetap) 
+    - posisi absolute dapat mengunkan properti top, left, bottom dan right untuk mengtur posisi
+    - dan ruang yang di tempati oleh elemen sebelum di beri posisi absolute di anggap tidak ada 
+    -pergesar posisi absoluter berdasarkan lingkungan parentnya(body)
+    -jika kita ingin mengunkan posisi absolute pada pada sebuah elemen yang container sebagain parent elementnya kita harus memberikan posisi relatif kepada parent elemntnya (disini container-> sebaigai parent element), agar elemnen y memiliki posisi absolute mengangap container sebagai elemen parentnya
+*/
+
+.absolute-satu {
+    background-color: blue;
+
+}
+
+.absolute-dua {
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.absolute-tiga {
+    background-color: black;
+
+}
+
+/* fixed
+    - perpindah atau pergeseran posisinya berdarkan windows, 
+    - pergeserannya tidak berdasarkan elemnt parentnya
+    - ketika di scroll posisi fixed ini tetap berada di posisinya seperti melekta pada laya monitor kita
+*/
+
+
+.fixed-satu {
+    background-color: blue;
+
+}
+
+.fixed-dua {
+    background-color: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.fixed-tiga {
+    background-color: black;
+
+}
+
+/* z-index 
+    -   bisak digunakan pada posisi(relatif, absolute, fixed)
+    -   semakin besar angak semaikin diatas elemenya
+*/
+
+.z-index-satu {
+    background-color: blue;
+    position: absolute;
+}
+
+.z-index-dua {
+    background-color: orange;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 1;
+}
+
+.z-index-tiga {
+    background-color: black;
+    position: absolute;
+    top: 140px;
+    left: 140px;
+
+}

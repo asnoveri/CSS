@@ -1,0 +1,68 @@
+/* Trasnsition
+    memilik empat buah parameter:
+    1. durasi -> parameter wajib
+    ex: transition: 1s;
+    2. property -> menetukan property apa saja yang akan di gunakan pada keadaan akhir
+        - all -> semua property atau bsa di kosongkan
+        ex; transition: all 1s;
+            trasition: 1s
+        - atau di didepan durasi kita bisa menambhkan nama property yang akan di jalankan pada kondisis akhir
+        ex: trasition :border-radius 1s
+    3. fungsi -> atau di sebut juga timing transistion,
+        penulisan di tuliskan dibelakang durasi
+            - ease -> nilai default
+            - ease, ease-in, ease-in-out, linear, ease-out-> yang membedakannya hanyak kecapatn
+            - cubic-bezier -> memiliki 4 parameter yang harus di isikan, kita bisa lihat contohnya pada google chroem pada inspect element, di cara elemt yang memiliki  fungis ciubic-bezier
+
+    4. delay-> u memberikain waktu sebelum menjlankan transisi, tambahkan delay di belakang durasi.        
+
+*/
+
+.con {
+    width: 50%;
+    height: 800px;
+    margin: 5px auto;
+    border: 2px solid black;
+
+}
+
+.kotak {
+    width: 100px;
+    height: 80px;
+    background-color: blue;
+    margin: 10px 0;
+    text-align: center;
+    line-height: 80px;
+}
+
+.kotak1 {
+    transition: 3s 2s ease;
+}
+
+.kotak2 {
+    transition: 3s 1s ease-in;
+}
+
+.kotak3 {
+    transition: 3s 3s ease-out;
+}
+
+.kotak4 {
+    transition: 3s 4s ease-in-out;
+}
+
+.kotak5 {
+    transition: margin-left 1s, transform 1s 2s, border-radius 1s 3s;
+}
+
+.kotak6 {
+    transition: 3s cubic-bezier(0.93, -0.27, 0.58, 1);
+}
+
+
+.con:hover .kotak {
+    transform: rotate(720deg);
+    margin-left: 75%;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+}

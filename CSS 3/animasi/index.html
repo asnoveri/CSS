@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Animasi</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<style>
+    /* animasi 
+        synatk animasi
+        @keyframes [name]{
+            from{
+                [property-css]
+            }
+            to {
+                [property-css]
+            }
+        }
+        - ini bisa di tulis dimanapu pada file css, tidak seharu pada selector, from dan to bisa di ubah denga persen jika mempunyai lebih dari dua keadaan
+        - cara menjalankan animasi yaitu kita bisa menambhkan ke dalam selector atau dalam triger tertentu, dengan cara seperti berikut,
+      
+            animation: [nama animasinya] [timing] [function] 
+            ex: .kotak:hover{
+                animation: kotakanime 2s ease
+            }
+
+        - nilai yang bisa di gunakan pada property key frames
+            1 name -> nama
+            2 durasi ->waktu animasi berjalan
+            3 timing function
+                e: ease, ease-in. ease-out, ease-in-out, linear 
+            4 delay -> waktu tunggu animasi sebelum di jalankan
+            5 iteration-count -> nilai propert yang menghendale perulangan animasi, nilainya dapat berupa angka atau infinite(tanpa henti);
+                syntaknya:
+                animation: nama animation 1
+                    1-> adalah iteration-count nya(jumlah pengulangan)
+            6 derection -> 
+                normalnya:
+                    -normal -> default -> animasinya di jlankan dari awal sampai akhir
+                    -reverse -> animasi di mulai dari akhir dan berkahir di awal
+                    -alternate -> animasinya berjalan awal-akhor-akhir-awal /bolak balik
+                    -alternate-reverse->  animasinya berjalan -akhr-awal-awal-akhir /boalk balik
+            7 fill-mode -> menentukanakhir dari transisi
+                - none ->
+                - booth ->
+                - forward -> digunakan untuk menghentikan animasi di keadaan akhir,jika nilai iteration-countnya ganjil,
+                - backward ->
+            8. play-state -> kondisi berjalan dan berhenti
+                - runing -> nilai default
+                -play -> di jalankan
+                -pause -> di hentikan   
+            */
+
+    .kotak {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        margin: 15px;
+
+    }
+
+    .k1:hover {
+        animation: kotakanime 3s ease 1;
+        /* atau bisa juga seperti di bawah 
+        animation-name: nama-animasi ;
+        animation-duration: durasinya, biasanya nilain spt(s/ms);
+        animation-timing-function: nama functionya spt (ease/ease-in/ease-in-out/ease-out/linear);
+        animation-iteration-count: waktu-pengulangan spt (1,2 infinte)
+        animation-delay: waktu-tunguu spt(1s,2s)
+        */
+    }
+
+    .k2:hover {
+        animation: kotakanime 3s ease-in-out infinite reverse;
+    }
+
+    .k3:hover {
+        animation: kotakanime 3s ease-in-out infinite alternate;
+    }
+
+    .k4:hover {
+        animation: kotakanime 3s ease-in-out 3 alternate forwards;
+    }
+
+    .k5:hover {
+        animation: kotakanime 3s ease-in-out infinite alternate forwards;
+    }
+
+    /* @keyframes kotakanime {
+        from {
+            width: 100px;
+        }
+
+        to {
+            width: 150px;
+        }
+    }  this*/
+
+    /* to this */
+    @keyframes kotakanime {
+        0% {
+            width: 100px;
+            border-radius: 30%;
+        }
+
+        50% {
+            transform: rotate(45deg);
+            border-radius: 50%;
+            background-color: chartreuse;
+        }
+
+        100% {
+            transform: rotate(450deg);
+            border-radius: 50%;
+            background-color: brown;
+
+        }
+
+    }
+</style>
+
+<body>
+    <div class="kotak k1">Animasi Iteration 1s</div>
+    <div class="kotak k2">Animasi Iteration Ifinite </div>
+    <div class="kotak k3">Animasi Derection </div>
+    <div class="kotak k4">Animasi Fillmod </div>
+    <div class="kotak k5">Animasi Play-Statet </div>
+</body>
+
+</html>

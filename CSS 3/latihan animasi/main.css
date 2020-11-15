@@ -1,0 +1,73 @@
+.container {
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 15px auto;
+    position: relative;
+}
+
+.kotak {
+    width: 50px;
+    height: 50px;
+    background-color: cornflowerblue;
+    border-radius: 30%;
+
+}
+
+.pembungkus {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+
+}
+
+.animstart {
+    animation: animasiBola 2s linear infinite alternate forwards;
+}
+
+/* .pembungkus:hover .kotak {
+    animation: animasiBola 2s linear infinite alternate forwards;
+} */
+
+.btn {
+    background-color: salmon;
+    width: 60px;
+    border-radius: 30px;
+    border: 1px solid salmon;
+    /* float: right; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 45%;
+    left: 45%;
+    margin: 5px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(139, 80, 73);
+}
+
+
+@keyframes animasiBola {
+    0% {
+        background-color: red;
+        transform: rotate(450deg);
+    }
+
+    50% {
+        background-color: darkkhaki;
+        margin-left: 250px;
+        transform: translateY(250px);
+    }
+
+    100% {
+        background-color: darkslategray;
+        margin-left: 450px;
+        transform: rotate(450deg);
+    }
+
+}

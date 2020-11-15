@@ -1,0 +1,47 @@
+ /* div -> disaplay defaultnya block 
+span -> display defaultnya inline
+
+4 macam display:
+    1. inline -> 
+        - elemen html y secara defaul tidak menambhakan garis baru ketika dibuat
+        - lebar dan tinggi sebesar konten yang ada di dalamnya
+        - tidak dapat mengatur tinggi dan lebar inline, kecuali img
+        - margin dan paading hanya mepengruhi elemen secara horizontal, tidak vertikal.
+
+      contoh elemen inline=(b, strong, i, em, a ,span, sup, button, input, label, select, textarea,img)   
+    
+    2. inline-block->
+        - tidak ada elemen yang secara default memiliki property displya : inline-block
+        - kita harus ubah secara mnual
+        - perilaku dsarnya sama denga inline
+        - perbedaannya inline- block dapat kita atur lebar dan tinggi
+
+    3. block ->
+        - elemne secara default menambhkan garis baru
+        - jika tidak di atur lebarnya,  maka lebar defaul dari elemen block akan mempengaruhi lebar dari browser /parentnya
+        - dapat mengatur tinggi dan lebar elemen block
+        - di dalam elemen block, dapat menyimpan tag dengan elemen inline, inline-block, atau bahkan elemen block lagi
+    4. none ->
+        -unutk menghilngkan elemen tertentu
+
+    mengubah display elemen default
+
+      */
+
+ .nav a {
+     background-color: red;
+     width: 100px;
+     height: 50px;
+     display: inline-block;
+ }
+
+ h2 {
+     background-color: pink;
+     width: 300px;
+     height: 60px;
+     ;
+ }
+
+ ul li {
+     display: inline-block;
+ }
